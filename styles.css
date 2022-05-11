@@ -1,0 +1,32 @@
+html, body{
+    /*ensuring the page occupies the entire viewport*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#page-container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    width: 100%;
+    height:100%;
+}
+
+#form-container{
+    
+}
+
+#banner{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+#banner>img{
+    width: 100%;
+    width: calc(5034/7952*100%);
+    height: 100%;
+}
+
