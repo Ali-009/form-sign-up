@@ -20,13 +20,11 @@ html, body{
 #banner{
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
+    width: calc(5034/7952*100vw);
     height: 100%;
 }
 
 #banner>img{
-    width: 100%;
-    width: calc(5034/7952*100%);
     height: 100%;
 }
 
