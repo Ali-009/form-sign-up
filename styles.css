@@ -136,9 +136,9 @@ html, body{
 #form-buttons button{
     background-color: #596D48;
     color: white;
-    height: 8vh;
-    width: 10vw;
-    border-radius: 6px;
+    width: 120px;
+    height: 35px;
+    border-radius: 7px;
     border-color: #596D48;
     box-shadow: 2px 2px 2px 2px rgb(179, 179, 179);
     cursor: pointer;
