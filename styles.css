@@ -51,6 +51,7 @@ html, body{
 #form-container{
     height: 100%;
     width: clamp(45ch, 40%, 75ch);
+    margin-top: 20vh;
     font-family: 'Roboto Flex', sans-serif;
     display: flex;
     flex-flow: column nowrap;
@@ -62,10 +63,6 @@ html, body{
 
 #form-info{
     padding-right: 15px;
-}
-
-#form-info>h2{
-    margin-top: 40px;
 }
 
 #form-info>section{
@@ -128,7 +125,7 @@ html, body{
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    gap: 2vw;
+    gap: 25px;
     width:100%;
     padding: 10px 0 20px 0;
 }
