@@ -9,7 +9,7 @@ html, body{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    width: 100%;
+    width: auto;
     height:100%;
 }
 
@@ -25,6 +25,7 @@ html, body{
 
 #form-container{
     height: 100%;
+    width: clamp(45ch, 40%, 75ch);
     font-family: 'Roboto Flex', sans-serif;
     display: flex;
     flex-direction: column;
@@ -39,22 +40,68 @@ html, body{
 }
 
 #form-info>section{
-    width: clamp(45ch, 40%, 75ch);
+    font-weight: 800;
+    font-size: 1.1rem;
 }
 
 #form-input{
     display: flex;
     flex-flow: column nowrap;
-    gap: 1vw;
+    gap: 20px;
+    width: 100%;
+
+    padding: 20px 0px;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+}
+
+#form-input input{
+    width: 90%;
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.4rem;
 }
 
 #user-name, #user-contact, #user-password{
     display: flex;
     flex-flow: row wrap;
-    gap: 2vw;
+    gap: 20px;
 }
 
 #form-input .user-input{
     display: flex;
     flex-flow: column nowrap;
+    gap: 3px;
+}
+
+#form-input label{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+#form-buttons{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 2vw;
+    width:100%;
+    padding-top: 10px;
+
+}
+
+#form-buttons button{
+    background-color: #596D48;
+    color: white;
+    height: 8vh;
+    width: 10vw;
+    border-radius: 6px;
+    border-color: #596D48;
+    box-shadow: 2px 2px 2px 2px rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+#form-buttons a{
+    text-decoration: none;
+    color: #596D48;
+    margin-left: 5px;
 }

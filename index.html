@@ -7,7 +7,8 @@
     <title>Sign-up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -17,46 +18,48 @@
         </div>
         <div id="form-container">
             <div id="form-info">
-                <h2>This is a form</h2>
-                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident cum veniam assumenda iure quaerat tenetur molestiae adipisci vero qui, aspernatur dolore excepturi labore sint voluptatibus facilis quae. Repudiandae, obcaecati?</section>
+                <h2>This Is a Form</h2>
+                <section>This is not a real online service! You know you need something like this in your like to help you realize your deepest dreams. Sign up now to get started.</section>
+                <br>
+                <section>You <em>know</em> you want to</section>
             </div>
             
-            <form action="" id="form-input">
+            <form action="" id="form-input" method="GET">
                 <div id="user-name">
                     <div class="user-input">
-                        <label for="first-name">First Name</label>
+                        <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name">
                     </div>
                     <div class="user-input">
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name">
                     </div>
                 </div>
                 <div id="user-contact">
                     <div class="user-input">
-                        <label for="email-address">Email</label>
+                        <label for="email-address">EMAIL</label>
                         <input type="email" id="email-address">
                     </div>
                     <div class="user-input">
-                        <label for="phone-number">Phone Number</label>
+                        <label for="phone-number">PHONE NUMBER</label>
                         <input type="tel" id="phone-number">
                     </div>
                 </div>
                 <div id="user-password">
                     <div class="user-input">
-                        <label for="password">Password</label>
+                        <label for="password">PASSWORD</label>
                         <input type="password" id="password">
                     </div>
                     <div class="user-input">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="text" id="confirm-password">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password">
                     </div>
                 </div>
             </form>
 
             <div id="form-buttons">
-                <button id="submit-button">Create Account</button>
-                <button id="login-screen">Already Have An Account?</button>
+                <button id="submit-button" form="form-input">Create Account</button>
+                <div id="log-in-text">Already have an account? <a href="">Log In</a></div>
             </div>
         </div>
     </div>
