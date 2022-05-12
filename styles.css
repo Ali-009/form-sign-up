@@ -17,10 +17,10 @@ html, body{
     display: flex;
     flex-flow: column nowrap;
     height: 100%;
-}
-
-#banner>img{
-    height: 100%;
+    width: 67vh;
+    background-image: url(./images/futc-sYxxQaGK7tY-unsplash.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 #form-container{
@@ -29,14 +29,18 @@ html, body{
     font-family: 'Roboto Flex', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 5vw; 
-    gap: 2vw;
+    margin-left: 40px; 
+    gap: 10px;
+}
+
+#form-info{
+    padding-right: 15px;
 }
 
 #form-info>h2{
-    margin-top: 0;
+    margin-top: 40px;
 }
 
 #form-info>section{
@@ -56,9 +60,25 @@ html, body{
 }
 
 #form-input input{
-    width: 90%;
+    appearance: none;
+    outline: none;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+
     font-family: 'Roboto Flex', sans-serif;
+
+    width: 90%;
     line-height: 1.4rem;
+}
+
+#form-input input:focus{
+    border-width: 2px;
+    border-color: lightskyblue;
+}
+
+#form-input input:focus:invalid{
+    border-width: 2px;
+    border-color: red;
 }
 
 #user-name, #user-contact, #user-password{
@@ -98,6 +118,10 @@ html, body{
     border-color: #596D48;
     box-shadow: 2px 2px 2px 2px rgb(179, 179, 179);
     cursor: pointer;
+
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
 }
 
 #form-buttons a{
